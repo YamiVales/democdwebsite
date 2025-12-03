@@ -1,0 +1,97 @@
+/* estilos.css */
+/* Por Vales Corp */
+/*
+/* css para estilos solamente */
+
+/* @import url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.otf"); */
+
+@font-face {
+    font-family: 'MatrixBook';
+    src: url('https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*menú opaco y estilo vidrio*/
+.ui.menu {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    background-color: #000000bf !important;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2px;
+    padding-bottom: 0.5%;
+    position: fixed;
+    background: #111;
+    z-index: 1000;
+
+}
+
+.ui.inverted.segment {
+    background-color: #000000ff;
+}
+
+/* aqui cambié de img a section */
+#carrusel_principal section {
+    border-radius: 20px;
+    display: block;
+    mask-image:
+        linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
+        linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-composite: intersect;
+        -webkit-mask-image:
+        linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
+        linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+        -webkit-mask-composite: intersect;
+}
+
+#galeria h1 {
+    font-family: Matrix-Book;
+}
+
+.Matrix-Book {
+    font-family: Matrix-Book;
+}
+
+/* #etiqueta_principal h1 { */
+/*     font-family: Matrix-Book !important; */
+/* } */
+
+.doradoespecial.ui.button {
+    border: none;
+    border-radius: 90px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    text-decoration: none;
+    user-select: none;
+}
+
+.doradoespecial.ui.button::before {
+    content: "";
+    color: #ffd277;
+    border-radius: 90px;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.doradoespecial.ui.button span {
+    z-index: 1;
+    display: block;
+}
+
+.doradoespecial.ui.button:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.doradoespecial.ui.button:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.doradoespecial.ui.button:active {
+    transform: scale(0.95);
+}

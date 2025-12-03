@@ -1,0 +1,104 @@
+/* estilos.css */
+/* Por Vales Corp */
+/*
+/* css para ajustes del cuerpo, medidas, etc. */
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("../.././ui/fondo.webp");
+    background-size: cover;
+}
+
+#menu {
+    display: flex;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
+    z-index: 11;
+}
+
+#menu_movil .right.menu {
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+.ui.button {
+    display: inline-flex;               /* pone el texto e icono alineados */
+    align-items: center;                /* centra verticalmente */
+    gap: 8px;                           /* espacio entre texto e icono */
+}
+
+.ui.button .material-symbols-outlined {         /* opcional: tamaño del icono */
+    line-height: 1;                     /* evita que empuje el texto */
+}
+
+#christian_death_button.ui.button {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Escalado de elementos para pc, tablet y pantallas anchas */
+@media (min-width: 768px) {
+    #contenedor-computadora {
+        margin-top: -20px;
+    }
+
+    #logo_principal {
+        position: relative;
+        padding-top: 12vh;
+        z-index: 10;
+    }
+
+    #logo_principal .contenedor_logo_principal img {
+        width: 40vw;
+        height: auto;
+    }
+
+    /* Carrusel debajo del logo */
+    #carrusel_principal {
+        position: relative;
+        margin-top: -15%;  /* justo debajo del logo */
+    }
+
+    #carrusel_principal section {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+/* Escalado proporcional con la pantalla para fonos */
+@media (max-width: 767px) {
+    #contenedor-fono {
+        margin-top: 10%;
+        margin-bottom: -5%;
+    }
+
+    #logo_principal img {
+        position: relative;
+        z-index: 10;
+    }
+
+    #carrusel_principal {
+        position: relative;
+        margin-top: -25%;
+    }
+}
+
+/* Solo para el index de construcción, luego borrar */
+
+#bocadito {
+    display: flex;
+}
+
+#bocadito .item {
+    padding-left: 30px;
+}
