@@ -16,8 +16,11 @@
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+    font-family: 'SF Pro Display';
+    src: url('https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/sfpro.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/Matrix-Book.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*menú opaco y estilo vidrio*/
@@ -33,12 +36,71 @@
 
 }
 
+#cortina_movil {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'SF Pro Display';
+}
+
+#cortina_movil .item {
+    line-height: 1.8;
+}
+
+#cortina_movil .item a {
+    color: #ffffff;
+}
+
+#cortina_musica,
+#cortina_contactos,
+#cortina_eventos_pasados,
+#cortina_proximos_eventos,
+#cortina_redes_sociales {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: 'SF Pro Display';
+}
+
+#cortina_musica .item,
+#cortina_contactos .item,
+#cortina_eventos_pasados .item,
+#cortina_proximos_eventos .item,
+#cortina_redes_sociales .item {
+    line-height: 1.8;
+}
+
+#cortina_musica .item a,
+#cortina_contactos .item a,
+#cortina_eventos_pasados .item a,
+#cortina_proximos_eventos .item a,
+#cortina_redes_sociales .item a {
+    color: #ffffff;
+}
+
+#cortina_musica .item.opcion,
+#cortina_contactos .item.opcion,
+#cortina_eventos_pasados .item.opcion,
+#cortina_proximos_eventos .item.opcion,
+#cortina_redes_sociales .item.opcion {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+#cortina_musica .item.titulo,
+#cortina_contactos .item.titulo,
+#cortina_eventos_pasados .item.titulo,
+#cortina_proximos_eventos .item.titulo,
+#cortina_redes_sociales .item.titulo {
+    color: #9c9c9c;
+}
+
 .ui.inverted.segment {
     background-color: #000000ff;
 }
 
 /* aqui cambié de img a section */
-#carrusel_principal section {
+#carrusel_principal_computadora section, #carrusel_principal_fono section {
     border-radius: 20px;
     display: block;
     mask-image:
@@ -59,8 +121,8 @@
     font-family: Matrix-Book !important;
 }
 
-.Helvetica-Neue {
-    font-family: 'Helvetica Neue' !important;
+.SF.Pro.Display {
+    font-family: 'SF Pro Display' !important;
 }
 
 /* #etiqueta_principal h1 { */
@@ -157,4 +219,13 @@ a.enlace:hover {
 
 .texto.grande {
     font-size: 1.5em;
+}
+
+#logobtn {
+    width: 30px;
+    height: 30px;
+}
+
+#music-title {
+    color: #ffffff;
 }

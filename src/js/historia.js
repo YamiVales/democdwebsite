@@ -5,66 +5,75 @@
 // Para mini historia de inicio porque no funciono junto a funciones.js >:c.
 $(document).ready(function (){
     // Todas las escenas ocultas por defecto
-    if ($('#escena_uno').hasClass('oculto')) {
+    if ($('#escena_uno').hasClass('oculto') && $('#cdhb1').hasClass('oculto')) {
         $('#escena_uno').hide();
+        $('#cdhb1').hide();
     }
-    if ($('#escena_dos').hasClass('oculto')) {
-        $('#escena_dos').hide();
+    if ($('#escena_dos_computadora').hasClass('oculto') && $('#cdhb2').hasClass('oculto')) {
+        $('#escena_dos_computadora').hide();
+        $('#cdhb2').hide();
     }
-    if ($('#escena_tres').hasClass('oculto')) {
+    if ($('#escena_dos_fono').hasClass('oculto') && $('#cdhb2').hasClass('oculto')) {
+        $('#escena_dos_fono').hide();
+        $('#cdhb2').hide();
+    }
+    if ($('#escena_tres').hasClass('oculto') && $('#cdhb3').hasClass('oculto')) {
         $('#escena_tres').hide();
+        $('#cdhb3').hide();
     }
     if ($('#escena_cuatro').hasClass('oculto')) {
         $('#escena_cuatro').hide();
     }
 
-    // Para el botón de christian
-    $('#christian_death_button').on('click', function(e) {
-        e.preventDefault();  // 1. Evita acciones predefinidas (como recargar)
-
-        var destino = $('#escena_uno_preludio');  // 2. Elemento a mostrar
-        var posicion;  // 3. Variable para la posición (la definimos después)
-
-        // 4. Mostrar elemento Y esperar a que termine (callback)
-        destino.show(1900, function() {
-            // 5. Solo aquí calculamos la posición (después de que aparezca)
-            posicion = destino.offset().top;  // -30px de margen superior
-
-            // 6. Animación de recorrido suave
-            $('html, body').stop().animate(
-                { scrollTop: posicion },
-                {
-                    duration: 1900,  // Tiempo: 1.2 segundos
-                    easing: 'swing',  // Efecto de aceleración
-                    complete: function() {
-                        console.log('Llegamos a #escena_uno con margen');
-                    }
-                }
-            );
+    // Para empezar a desocultar las historias y desoculta escena 1
+    $(document).ready(function() {
+        $('#cdbtn_principal_computadora').click(function(e) {
+            e.preventDefault(); // Evita acciones predeterminadas
+            // Recorrido suave hasta el elemento con id historia
+            $('html, body').animate({
+                scrollTop: $('#historia').offset().top
+            }, 2000);
+            $('#escena_uno').show(3000);
+            $('#cdhb1').show(3000);
         });
-      console.log('Botón clickeado: iniciando animación');
+        $('#cdbtn_principal_fono').click(function(e) {
+            e.preventDefault(); // Evita acciones predeterminadas
+            // Recorrido suave hasta el elemento con id historia
+            $('html, body').animate({
+                scrollTop: $('#historia').offset().top
+            }, 2000);
+            $('#escena_uno').show(3000);
+            $('#cdhb1').show(3000);
+        });
+        // Muestra escena 2
+        $('#cdhb1').click(function(e) {
+            e.preventDefault(); // Evita acciones predeterminadas
+            $('#escena_dos_computadora').show(3000);
+            $('#escena_dos_fono').show(3000);
+            $('#cdhb2').show(3000);
+            // Recorrido suave hasta el elemento con id historia
+            $('html, body').animate({
+                scrollTop: $('#separador_escena_uno').offset().top
+            }, 3000);
+        });
+        // Muestra escena 3
+        $('#cdhb2').click(function(e) {
+            e.preventDefault(); // Evita acciones predeterminadas
+            $('#escena_tres').show(3000);
+            $('#cdhb3').show(3000);
+            // Recorrido suave hasta el elemento con id historia
+            $('html, body').animate({
+                scrollTop: $('#separador_escena_dos').offset().top
+            }, 3000);
+        });
+        // Muestra escena 4
+        $('#cdhb3').click(function(e) {
+            e.preventDefault(); // Evita acciones predeterminadas
+            $('#escena_cuatro').show(3000);
+            // Recorrido suave hasta el elemento con id historia
+            $('html, body').animate({
+                scrollTop: $('#separador_escena_tres').offset().top
+            }, 3000);
+        });
     });
-
-    // Muestra escena uno después de hacer clic al christian_death_button
-    $('#escena_uno')
-        .visibility({
-            once: false,
-            // update size when new content loads
-            observeChanges: true,
-            // load content on bottom edge visible
-            onOnScreen: function(topPassed) {
-                $('#escena_uno').show(2200);
-            },
-        })
-    ;
-
-    // Muestra escena dos después de escena uno
-    $('#escena_dos')
-        .visibility({
-            onOnScreen: function(topPassed) {
-                $('#escena_dos').show(2200);
-            },
-        })
-    ;
 });
-

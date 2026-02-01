@@ -1,0 +1,14 @@
+/* animaciones.css
+ *
+ * Vales Corp
+ *
+ * Estilos para animaciones de toda la página
+ */
+
+.no.mostrar {
+    display: none;
+}
+
+.al.cargar {
+    /* transform: scale(7) !important; */
+}

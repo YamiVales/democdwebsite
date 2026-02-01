@@ -15,79 +15,150 @@
         <meta name="description" content="Darkness does not always mean evil. Sometimes it is the refuge of the soul."/>
         <meta name="keywords" content="music, christian death, valor kand, gothic, gothic rock, deathrock, maitri nicolai, dark, black, art, underground"/>
         <meta name="author" content="Vales Corp"/>
-        <title>Christian Death – Music</title>
-        <link type="text/css" rel="stylesheet" href="./src/semantic/semantic.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/cuerpo.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/componentes.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/estilos.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/carrusel.css"></link>
+        <title>🎵 Music – Christian Death</title>
+        <link type="text/css" rel="stylesheet" href=".././src/semantic/semantic.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/cuerpo.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/componentes.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/estilos.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/carrusel.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
     </head>
     <body id="root">
-        <!-- Aqui se supone que deberia de ir el menu lateral -->
-
-        <div class="ui container">
-            <div class="computer only ui tablet only grid">
-              <!-- Menú principal para pc y pantallas grandes -->
-                <div class="ui top fixed borderless inverted menu">
-                    <div id="menu">
-                        <a href="/" class="item">
-                            <img class="ui micro image" src="./ui/cdlogo.svg"/>
-                        </a>
-                        <a href="#" class="item" data-target="cortina_musica">
-                            <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
-                        </a>
-                        <a href="/contacts" class="item" data-target="cortina_contactos"><span class="material-symbols-outlined">contacts</span>&nbsp;Contacts</a>
-                        <a href="#" class="item" data-target="cortina_proxfechas"><span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates</a>
-                        <a href="#" class="item"><span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates</a>
-                        <!-- Cortinas desplegables -->
-                        <div class="cortina" id="cortina_musica">
-                            <a class="item">Discografía</a>
-                            <a class="item">Vídeos</a>
-                            <a class="item">Letras</a>
-                        </div>
-                        <div class="cortina" id="cortina_contactos">
-                            <a class="item">Email</a>
-                            <a class="item">Redes sociales</a>
-                            <a class="item">Booking</a>
-                        </div>
-                        <div class="cortina" id="cortina_proxfechas">
-                            <a class="item">Próximas</a>
-                            <a class="item">Pasadas</a>
-                            <a class="item">Festivales</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Menú movil -->
-            <div class="mobile only ui grid">
-                <div id="menu_movil" class="ui top fixed borderless inverted menu">
-                    <div class="item">
+    <!-- Cortinas -->
+    <!-- Cortina móvil -->
+    <div id="cortina_movil" class="insanus">
+        <div class="list">
+            <div class="item"><a href="music.html">Music</a></div>
+            <!-- Ocultar/desocultar cuando sea necesario -->
+            <div class="item"><a href="pastTourDates.html">Past Tour Dates</a></div>
+            <div class="item"><a href="upcomingTourDates.html">Upcoming Tour Dates</a></div>
+            <div class="item"><a href="contacts.html">Contacts</a></div>
+            <div class="item"><a href="shop.html">Shop</a></div>
+            <div class="item"><a href="socialNetworks.html">Social Networks</a></div>
+        </div>
+    </div>
+    <!-- Cortina música -->
+    <div id="cortina_musica" class="proditio">
+        <div class="list">
+            <div class="item titulo">Listen us on</div>
+            <div class="item opcion"><a href="https://music.apple.com/mx/artist/christian-death/6550137" target="blank">Apple Music</a></div>
+            <div class="item opcion"><a href="https://open.spotify.com/intl-es/artist/6mEohczxsctzkEIU0WAeWD?si=tCoOx4BQQsCVL_WQoFY7Fg" target="blank">Spotify</a></div>
+            <div class="item opcion"><a href="https://music.youtube.com/channel/UCxi91Pfz39YRtXQdn5n0NzA?si=EedafrKxRBumShHg" target="blank">YouTube Music</a></div>
+            <div class="item opcion"><a href="https://www.deezer.com/en/artist/15536" target="blank">Deezer</a></div>
+        </div>
+    </div>
+    <!-- Cortina eventos pasados -->
+    <div id="cortina_eventos_pasados" class="pornographic">
+        <div class="list">
+            <div class="item titulo">Checkout our past dates</div>
+            <div class="item opcion"><a href="pastTourDates.html">05.12.2025, CDMX, Foro Indie Rocks</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">11.12.2025, Argentina, Unione E Benevolenza</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">11.10.2024, Brazil, Vivo Río</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">13.10.2024, Brazil, Carioca Club</a></div>
+        </div>
+    </div>
+    <!-- Cortina próximos eventos -->
+    <div id="cortina_proximos_eventos" class="allTheLove">
+        <div class="list">
+            <div class="item titulo">Checkout our next events</div>
+            <div class="item opcion"><a href="contacts.html">Actually no one</a></div>
+        </div>
+    </div>
+    <!-- Cortina contactos -->
+    <div id="cortina_contactos" class="sexy">
+        <div class="list">
+            <div class="item titulo">Our contacts</div>
+            <div class="item opcion"><a href="contacts.html">Management</a></div>
+            <div class="item opcion"><a href="contacts.html">Bookings North & South America</a></div>
+            <div class="item opcion"><a href="contacts.html">Bookings Europe</a></div>
+            <div class="item opcion"><a href="contacts.html">General Information</a></div>
+        </div>
+    </div>
+    <!-- Cortina tienda -->
+    <div id="cortina_tienda" class="evil">
+        <div class="list">
+            <div class="item titulo">Shop our merch</div>
+            <div class="item opcion"><a href="shop.html">Official e-shop coming soon</a></div>
+            <!-- <div class="item opcion"><a href="/contacts">Bookings North & South America</a></div> -->
+            <!-- <div class="item opcion"><a href="/contacts">Bookings Europe</a></div> -->
+            <!-- <div class="item opcion"><a href="/contacts">General Information</a></div> -->
+        </div>
+    </div>
+    <!-- Cortina redes sociales -->
+    <div id="cortina_redes_sociales" class="theRootOfAll">
+        <div class="list">
+            <div class="item titulo">Find us in</div>
+            <div class="item opcion"><a href="https://www.facebook.com/christiandeath" target="blank">Facebook</a></div>
+            <div class="item opcion"><a href="https://www.instagram.com/christiandeath.official/" target="blank">Instagram</a></div>
+            <div class="item opcion"><a href="https://www.youtube.com/@christiandeath5266/videos" target="blank">YouTube</a></div>
+            <div class="item opcion"><a href="https://www.tiktok.com/@christiandeathofficial" target="blank">TikTok</a></div>
+        </div>
+    </div>
+    <!-- Fin cortinas -->
+    <!-- Este div es para hacer el efecto de degradado cuando se abre una cortina y quieres ocultar el contenido debajo -->
+    <!-- <div id="difuminadop3"></div> -->
+    <!-- Menú principal para pc y pantallas grandes -->
+    <div class="ui container">
+        <!-- Empieza menú pc -->
+        <div class="computer only ui tablet only grid">
+            <div class="ui top fixed borderless inverted menu">
+                <div id="menu">
+                    <a href="/" class="item">
                         <img class="ui micro image" src="./ui/cdlogo.svg"/>
+                    </a>
+                    <a id="music" href="music.html" class="item">
+                        <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
+                    </a>
+                    <!-- Deshabilitada a petición de la banda, desocultar/ocultar cuando se pida -->
+                    <a id="past" href="pastTourDates.html" class="item">
+                        <span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates
+                    </a>
+                    <a id="upcoming" href="upcomingTourDates.html" class="item">
+                        <span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates
+                    </a>
+                    <a id="contacts" href="contacts.html" class="item">
+                        <span class="material-symbols-outlined">contacts</span>&nbsp;Contacts
+                    </a>
+                    <a id="shop" href="shop.html" class="item">
+                        <span class="material-symbols-outlined">shopping_bag</span>&nbsp;Shop
+                    </a>
+                    <a id="socialnetworks" href="socialNetworks.html" class="item">
+                        <span class="material-symbols-outlined">globe</span>&nbsp;Social Networks
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Termina menú pc -->
+        <!-- Empieza menú movil -->
+        <div class="mobile only ui grid">
+            <div id="menu_movil" class="ui top fixed borderless inverted menu">
+                <div id="menu_christian_death_logo" class="item">
+                    <a href="index.html"><img class="ui micro image" src="./ui/cdlogo.svg"/></a>
+                </div>
+                <div class="right menu">
+                    <div id="buscar" class="item">
+                        <span class="material-symbols-outlined">search</span>
                     </div>
-                    <div class="right menu">
-                        <div class="item">
-                            <span class="material-symbols-outlined">search</span>
-                        </div>
-                        <div class="item">
-                            <!-- cambio aqui para la funcion del menu cortina -->
-                            <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
-                            <a href="#"><span class="material-symbols-outlined">menu</span></a>
-                        </div>
+                    <div id="boton_menu_movil" class="item">
+                        <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
+                        <a href="#"><span id="span_menu" class="material-symbols-outlined">menu</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="cdmusic_encabezado" class="ui sticky inverted vertical segment">
-            <div class="ui four column grid">
-                <div class="column">
-                    <a class="enlacep3" href="/music"><h2>Christian Death Music</h2></a>
-                </div>
-                <div class="botoncito right floated column">
-                    <a id="boton_escuchanos" class="ui circular button" target="blank" href="https://music.apple.com/us/artist/christian-death/6550137?itscg=30200&itsct=music_box_link&ls=1&app=music&mttnsubad=6550137"><i class="apple icon"></i>Listen Us</a>
-                </div>
-            </div>
+        <!-- Termina menú movil -->
         </div>
+        <!-- <div id="cdmusic_encabezado" class="ui inverted vertical segment"> -->
+            <!-- TODO: corregir banner de listen us -->
+        <!--     <div class="ui stackable column grid"> -->
+        <!--         <div class="eight wide column"> -->
+        <!--             <a class="enlacep3" href="/music"><h2>Christian Death Music</h2></a> -->
+        <!--         </div> -->
+        <!--         <div class="botoncito right floated column"> -->
+        <!--             <a id="boton_escuchanos" class="ui circular button" target="blank" href="https://music.apple.com/us/artist/christian-death/6550137?itscg=30200&itsct=music_box_link&ls=1&app=music&mttnsubad=6550137"><i class="apple icon"></i>Listen Us</a> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </div> -->
         <!-- Aqui empieza el contenido de la página -->
         <div class="ui container">
             <!-- Contenido de pagina para pc y pantalla grande -->
@@ -103,20 +174,26 @@
                         <div class="ui hidden divider"></div>
                         <div class="ui hidden divider"></div>
                         <div class="ui hidden divider"></div>
-                        <h1 class="ui header"><img id="music-logo" class="ui micro image caracter" src="./ui/cdlogo.svg"/>Music</h1>
+                        <div id="music-cabecera">
+                            <h1 id="music-title" class="SF Pro Display ui header">
+                                <img id="music-logo" class="ui micro image caracter" src="./ui/cdlogo.svg"/>
+                                <span>Music</span>
+                            </h1>
+                        </div>
                         <div class="ui hidden divider"></div>
                         <div class="ui hidden divider"></div>
                         <div class="ui container">
-                            <!-- <div class="bocadito masivo"> -->
-                            <!--     <p>For the Love</p> -->
-                            <!--     <p>of Gothic Music.</p> -->
-                            <!-- </div> -->
                             <div class="bocadito masivo">
-                                <h1 class="ui inverted header">For the love of Gothic Music</h1>
+                                <h1 class="Matrix-Book ui inverted header">For the love of Gothic Music</h1>
                             </div>
-                            <div class="bocadito texto">
+                            <div class="SF Pro Display bocadito texto">
                                 <p>
-                                    Where darkness sings, presents over a thousand songs — raw, unfiltered sound transcending music. It’s a ritualistic descent into shadow‑forged melodies, journeying through echoes of the abandoned, beloved, and damned. Each note and silence carries profound weight, evoking the chill of an empty cathedral. Uncompromising and immersive, it’s pure music, pure truth — Christian Death. Listen. Let the darkness in.
+                                    Where darkness sings, a thousand raw
+                                    songs dig <i>The Root Of All Evilution.</i>
+                                    Ritualistic melodies descend through shadows,
+                                    echoing the abandoned, beloved, damned.
+                                    Notes and silences weigh heavy, like an empty cathedral.
+                                    Pure music, pure truth — Christian Death.
                                 </p>
                             </div>
                         </div>
@@ -128,8 +205,10 @@
             <!-- Empieza sección del material musical -->
             <div class="redondeado vidrio negro ui inverted segment container">
                 <!-- Aquí van todos los servicios de streaming -->
-                <h1 class="centrado">Listen us on</h1>
-                <div class="ui four column stackable grid">
+                <h1 class="Matrix-Book treinta pt centrado">Listen us on</h1>
+                <!-- Bocadito para los servicios de streaming -->
+                <!-- Inicia bocadito para pc -->
+                <div class="ui computer only tablet only four column doubling stackable grid">
                     <div class="column">
                         <a href="https://music.apple.com/us/artist/christian-death/6550137?itscg=30200&itsct=music_box_badge&ls=1&app=music&mttnsubad=6550137" style="display: inline-block;" target="blank">
                             <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/listen-on-apple-music/badge/en-us" alt="Listen on Apple Music" style="height: 72px; vertical-align: middle; object-fit: contain;" />
@@ -151,238 +230,322 @@
                         </a>
                     </div>
                 </div>
-
+                <!-- Termina bocadito pc -->
+                <!-- Inicia bocadito para fono -->
+                <div id="bocadito-fono" class="ui mobile only four column doubling grid">
+                    <div class="two column row">
+                        <div class="column">
+                            <a href="https://music.apple.com/us/artist/christian-death/6550137?itscg=30200&itsct=music_box_appicon&ls=1&app=music&mttnsubad=6550137" style="display: inline-block;">
+                                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/app-icon-music/standard/en-us" alt="Apple Music app icon"/>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h1 class="SF Pro Display ui inverted header">Apple Music</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://open.spotify.com/intl-es/artist/6mEohczxsctzkEIU0WAeWD?si=k2CNOgWkTbOdVp-nBgaoxA" target="blank">
+                                <img class="ui mini image" src="./ui/spotifyicon.webp" alt="Listen on Spotify"/>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h1 class="SF Pro Display ui inverted header">Spotify</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://music.youtube.com/channel/UCxi91Pfz39YRtXQdn5n0NzA?si=La7ykcQTEs6iRTH5" style="display: inline-block;" target="blank">
+                                <img class="ui mini image" src="./ui/ytmusicicon.webp" alt="Listen on YouTube Music"/>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h1 class="SF Pro Display ui inverted header">YouTube Music</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://link.deezer.com/s/321MF3uIRtRTPMqoZLnZ1" style="display: inline-block;" target="blank">
+                                <img class="ui mini image" src="./ui/deezericon.webp" alt="Listen on Deezer"/>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <h1 class="SF Pro Display ui inverted header">Deezer</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Termina bocadito fono -->
                 <div class="ui hidden divider"></div>
                 <!-- Aquí van los álbumes -->
-                <h1 class="centrado">Look our art</h1>
+                <h1 class="Matrix-Book treinta pt centrado">Official releases</h1>
                 <!-- Álbumes
                    - Cada álbum nuevo va en una columna, y se le pone un id acorde a su nombre y lleva img para la imagen y modal para el modal
                 -->
                 <!-- Inicio albumes -->
-                <div class="ui four column stackable grid">
-                    <div id="mostrarMas">
-                        <div class="column">
-                            <h1 id="h1">Albums<span id="span" class="material-symbols-outlined">keyboard_arrow_right</span></h1>
+                <!-- NOTA: se le quita doubling stackable para probar la responsibidad -->
+                <div id="releases">
+                    <div class="ui four column grid">
+                        <div id="mostrarMas">
+                            <div class="column">
+                                <h1 id="h1">Albums<span id="span" class="material-symbols-outlined">keyboard_arrow_right</span></h1>
+                            </div>
                         </div>
+                        <!-- Inicio fila 1 -->
+                        <div class="row">
+                            <div class="column">
+                                <div id="img-ebr" class="ui raised link card item" style="background-color: #495231;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/94/d3/a2/94d3a2fb-0912-0409-7343-9a0af3bd6e8c/822603163902.jpg/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Evil Becomes Rule – 2022
+                                    </div>
+                                </div>
+                                <div id="modal-ebr" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/evil-becomes-rule/1606816616"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-roae" class="ui raised link card item" style="background-color: #303d38;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/ce/8c/f8/ce8cf8d1-559e-366a-dad1-6079d84836f5/628586156449_cover.jpg/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        The Root Of All Evilution – 2015
+                                    </div>
+                                </div>
+                                <div id="modal-roae" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/the-root-of-all-evilution/1024609177"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-ai" class="ui raised link card item" style="background-color: #6b4930; box-shadow: #6b4930;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/73/90/ee7390e5-6d45-01a9-d4d9-ce3458c8e15c/859720069688_cover.jpg/592x592bb.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        American Inquisition – 2007
+                                    </div>
+                                </div>
+                                <div id="modal-ai" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/american-inquisition/1212963413"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-baac" class="ui raised link card item" style="background-color: #3d3517;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music/e0/10/ab/mzi.bdxrglep.jpg/592x592bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Born Again Anti-Christian – 2000
+                                    </div>
+                                </div>
+                                <div id="modal-baac" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/born-again-anit-christian/777903886"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin fila 1 -->
                     </div>
-                    <!-- Inicio fila 1 -->
-                    <div class="row">
-                        <div class="column">
-                            <div id="img-ebr" class="ui raised link card item" style="background-color: #495231;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/94/d3/a2/94d3a2fb-0912-0409-7343-9a0af3bd6e8c/822603163902.jpg/632x632bf.webp"></img>
+                    <!-- Pedazo oculto para desplegar -->
+                    <div id="masAlbumes" class="oculto ui four column grid">
+                        <!-- Inicio fila 2 -->
+                        <!-- comentario de prueba -->
+                        <div class="row">
+                            <div class="column">
+                                <div id="img-pm" class="ui raised link card item" style="background-color: #806919;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/93/74/c6/9374c680-67d5-9401-162f-ec97109b5a9d/859711705212_cover.tif/592x592bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Pornographic Messiah – 1998
+                                    </div>
                                 </div>
-                                <div class="Matrix-Book pedacito">
-                                    Evil Becomes Rule – 2022
+                                <div id="modal-pm" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/pornographic-messiah/777894523"></iframe>
                                 </div>
                             </div>
-                            <div id="modal-ebr" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/evil-becomes-rule/1606816616"></iframe>
+                            <div class="column">
+                                <div id="img-p" class="ui raised link card item" style="background-color: #172620;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/d7/09/d8/d709d80c-e3a0-2b06-3451-d09a90da5807/859713004634_cover.tif/592x592bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Prophecies – 1996
+                                    </div>
+                                </div>
+                                <div id="modal-p" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/prophecies/911917655"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-sdg" class="ui raised link card item" style="background-color: #315246; box-shadow: #6b4930;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/38/57/73/3857730b-9446-59ad-2b00-74ce4a6f52a0/859711704994_cover.tif/632x632bb.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Sexy Death God – 1994
+                                    </div>
+                                </div>
+                                <div id="modal-sdg" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/sexy-death-god/776212406"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-iupm" class="ui raised link card item" style="background-color: #364731;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/09/f5/72/09f57293-6fb7-3306-6abb-55840201f4d1/859713004573_cover.tif/592x592bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Insanus, Ultio, Proditio, Misericordiaque – 1990
+                                    </div>
+                                </div>
+                                <div id="modal-iupm" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/insanus-ultio-prodito-misericordiaque/911917504"></iframe>
+                                </div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div id="img-roae" class="ui raised link card item" style="background-color: #303d38;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/ce/8c/f8/ce8cf8d1-559e-366a-dad1-6079d84836f5/628586156449_cover.jpg/632x632bf.webp"></img>
+                        <!-- Fin fila 2 -->
+                        <!-- Inicio fila 3 -->
+                        <div class="row">
+                            <div class="column">
+                                <div id="img-atlath1" class="ui raised link card item" style="background-color: #9eb099;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/8a/af/3e/8aaf3e5a-a490-3cab-2ffb-aa93003b2bb1/859713003330_cover.tif/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        All the Love All the Hate (Part One: All the Love) – 1989
+                                    </div>
                                 </div>
-                                <div class="Matrix-Book pedacito">
-                                    The Root Of All Evilution – 2015
+                                <div id="modal-atlath1" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/all-the-love-all-the-hate-part-one-all-the-love/911917592"></iframe>
                                 </div>
                             </div>
-                            <div id="modal-roae" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/the-root-of-all-evilution/1024609177"></iframe>
+                            <div class="column">
+                                <div id="img-atlath2" class="ui raised link card item" style="background-color: #293028;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/63/d1/75/63d17528-6152-6f2b-b9a8-39c8c1f5151e/859713004009_cover.tif/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        All the Love All the Hate (Part Two: All the Hate) – 1989
+                                    </div>
+                                </div>
+                                <div id="modal-atlath2" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/all-the-love-all-the-hate-part-two-all-the-hate/913605290"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-sdjc" class="ui raised link card item" style="background-color: #005726; box-shadow: #6b4930;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/22/90/1e/22901e1d-ec1b-4755-d276-d5328911bb1b/859713004832_cover.tif/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Sex and Drugs and Jesus Christ – 1988
+                                    </div>
+                                </div>
+                                <div id="modal-sdjc" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/sex-and-drugs-and-jesus-christ/911921670"></iframe>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div id="img-ts" class="ui raised link card item" style="background-color: #252922;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/a0/f3/78/a0f3787f-9c22-da03-cdd2-e2d0db53fa44/859711704864_cover.tif/632x632bf.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        The Scriptures – 1987
+                                    </div>
+                                </div>
+                                <div id="modal-ts" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/the-scriptures/776303908"></iframe>
+                                 </div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div id="img-ai" class="ui raised link card item" style="background-color: #6b4930; box-shadow: #6b4930;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/73/90/ee7390e5-6d45-01a9-d4d9-ce3458c8e15c/859720069688_cover.jpg/592x592bb.webp"></img>
+                        <!-- Fin fila 3 -->
+                        <!-- Inicio fila 4 -->
+                        <div class="row">
+                            <div class="column">
+                                <div id="img-a" class="ui raised link card item" style="background-color: #2c6352;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/90/55/7e/90557e7b-52ed-b0fd-078d-8346a3703b59/859711704642_cover.tif/592x592bb.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Atrocities – 1989
+                                    </div>
                                 </div>
-                                <div class="Matrix-Book pedacito">
-                                    American Inquisition – 2007
+                                <div id="modal-a" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/atrocities/776298126"></iframe>
                                 </div>
                             </div>
-                            <div id="modal-ai" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/american-inquisition/1212963413"></iframe>
+                            <div class="column">
+                                <div id="img-jptbay" class="ui raised link card item" style="background-color: #0f573b;">
+                                    <div class="image">
+                                        <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9d/8b/c6/9d8bc6b5-1aff-6482-f5eb-ab7e950996d1/859713109438_cover.tif/592x592bb.webp"></img>
+                                    </div>
+                                    <div class="Matrix-Book pedacito">
+                                        Jesus Points the Bone at You? – 1989
+                                    </div>
+                                </div>
+                                <div id="modal-jptbay" class="ui album small modal">
+                                    <i class="close"><span class="material-symbols-outlined">close</span></i>
+                                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/jesus-points-the-bone-at-you/911920861"></iframe>
+                                </div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div id="img-baac" class="ui raised link card item" style="background-color: #3d3517;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music/e0/10/ab/mzi.bdxrglep.jpg/592x592bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Born Again Anti-Christian – 2000
-                                </div>
-                            </div>
-                            <div id="modal-baac" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/born-again-anit-christian/777903886"></iframe>
-                            </div>
-                        </div>
+                        <!-- Fin fila 4 -->
                     </div>
-                    <!-- Fin fila 1 -->
-                </div>
-                <div id="masAlbumes" class="oculto ui four column stackable grid">
-                    <!-- Inicio fila 2 -->
-                    <!-- comentario de prueba -->
-                    <div class="row">
-                        <div class="column">
-                            <div id="img-pm" class="ui raised link card item" style="background-color: #806919;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/93/74/c6/9374c680-67d5-9401-162f-ec97109b5a9d/859711705212_cover.tif/592x592bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Pornographic Messiah – 1998
-                                </div>
-                            </div>
-                            <div id="modal-pm" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/pornographic-messiah/777894523"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-p" class="ui raised link card item" style="background-color: #172620;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/d7/09/d8/d709d80c-e3a0-2b06-3451-d09a90da5807/859713004634_cover.tif/592x592bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Prophecies – 1996
-                                </div>
-                            </div>
-                            <div id="modal-p" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/prophecies/911917655"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-sdg" class="ui raised link card item" style="background-color: #315246; box-shadow: #6b4930;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/38/57/73/3857730b-9446-59ad-2b00-74ce4a6f52a0/859711704994_cover.tif/632x632bb.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Sexy Death God – 1994
-                                </div>
-                            </div>
-                            <div id="modal-sdg" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/sexy-death-god/776212406"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-iupm" class="ui raised link card item" style="background-color: #364731;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/09/f5/72/09f57293-6fb7-3306-6abb-55840201f4d1/859713004573_cover.tif/592x592bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Insanus, Ultio, Proditio, Misericordiaque – 1990
-                                </div>
-                            </div>
-                            <div id="modal-iupm" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/insanus-ultio-prodito-misericordiaque/911917504"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin fila 2 -->
-                    <!-- Inicio fila 3 -->
-                    <div class="row">
-                        <div class="column">
-                            <div id="img-atlath1" class="ui raised link card item" style="background-color: #9eb099;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/8a/af/3e/8aaf3e5a-a490-3cab-2ffb-aa93003b2bb1/859713003330_cover.tif/632x632bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    All the Love All the Hate (Part One: All the Love) – 1989
-                                </div>
-                            </div>
-                            <div id="modal-atlath1" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/all-the-love-all-the-hate-part-one-all-the-love/911917592"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-atlath2" class="ui raised link card item" style="background-color: #293028;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/63/d1/75/63d17528-6152-6f2b-b9a8-39c8c1f5151e/859713004009_cover.tif/632x632bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    All the Love All the Hate (Part Two: All the Hate) – 1989
-                                </div>
-                            </div>
-                            <div id="modal-atlath2" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/all-the-love-all-the-hate-part-two-all-the-hate/913605290"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-sdjc" class="ui raised link card item" style="background-color: #005726; box-shadow: #6b4930;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/22/90/1e/22901e1d-ec1b-4755-d276-d5328911bb1b/859713004832_cover.tif/632x632bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Sex and Drugs and Jesus Christ – 1988
-                                </div>
-                            </div>
-                            <div id="modal-sdjc" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/sex-and-drugs-and-jesus-christ/911921670"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-ts" class="ui raised link card item" style="background-color: #252922;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/a0/f3/78/a0f3787f-9c22-da03-cdd2-e2d0db53fa44/859711704864_cover.tif/632x632bf.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    The Scriptures – 1987
-                                </div>
-                            </div>
-                            <div id="modal-ts" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/the-scriptures/776303908"></iframe>
-                             </div>
-                        </div>
-                    </div>
-                    <!-- Fin fila 3 -->
-                    <!-- Inicio fila 4 -->
-                    <div class="row">
-                        <div class="column">
-                            <div id="img-a" class="ui raised link card item" style="background-color: #2c6352;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/90/55/7e/90557e7b-52ed-b0fd-078d-8346a3703b59/859711704642_cover.tif/592x592bb.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Atrocities – 1989
-                                </div>
-                            </div>
-                            <div id="modal-a" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/atrocities/776298126"></iframe>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div id="img-jptbay" class="ui raised link card item" style="background-color: #0f573b;">
-                                <div class="image">
-                                    <img class="ui tiny image" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9d/8b/c6/9d8bc6b5-1aff-6482-f5eb-ab7e950996d1/859713109438_cover.tif/592x592bb.webp"></img>
-                                </div>
-                                <div class="Matrix-Book pedacito">
-                                    Jesus Points the Bone at You? – 1989
-                                </div>
-                            </div>
-                            <div id="modal-jptbay" class="ui album small modal">
-                                <i class="close"><span class="material-symbols-outlined">close</span></i>
-                                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/jesus-points-the-bone-at-you/911920861"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin fila 4 -->
                 </div>
                 <!-- Fin álbumes -->
-                <h1>All the art at the reach of a click</h1>
+                <div class="ui hidden divider"></div>
+                <!-- Inicio de sección de videos musicales recientes -->
+                <div id="video-galeria" class="ui inverted stackable center aligned doubling grid container">
+                    <h1 class="Matrix-Book centrado cuarenta pt ui inverted header">Official MVs</h1>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui doubling stackable grid">
+                        <div class="three column row">
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/bJUYB2IP_wQ?si=r5yC3Xh1Fog_nIjd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"Blood Moon" Official MV</h3>
+                            </div>
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/PNKVhN3dAg8?si=XFOGLsdfXawFcC5-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"The Warning" Official MV</h3>
+                            </div>
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/RCF5lrd1mEA?si=wIBYRwtzKisdi9To" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"Beautiful" Official MV</h3>
+                            </div>
+                        </div>
+                        <div class="three column row">
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/JQTdnV5sNPU?si=625k26ns94eGG_Su" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"Illuminazi" Official MV</h3>
+                            </div>
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/6uDLJFCfkA8?si=xmuyBdNj_pILyWhd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"Quicksand" Official MV</h3>
+                            </div>
+                            <div class="column">
+                                <iframe src="https://www.youtube.com/embed/D1R5cutw0Eg?si=Juib4k8nJSQU1TQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3 class="centrado SF Pro Display ui inverted header">"Forgiven" Official MV</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de sección de videos musicales recientes -->
                 <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:50%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/evil-becomes-rule/1606816616"></iframe> -->
             </div>
         </div>
@@ -421,7 +584,9 @@
         <!-- Fin de pié de página -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-        <script src="./src/js/funciones.js"></script>
-        <script src="./src/js/carrusel.js"></script>
+        <script src=".././src/js/funciones.js"></script>
+        <script src=".././src/js/carrusel.js"></script>
+        <script src=".././src/js/menu.js"></script>
+        <script src=".././src/js/animaciones.js"></script>
     </body>
 </html>

@@ -1,0 +1,122 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>timeline</title>
+        <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="../.././semantic/semantic.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />"
+    </head>
+    <body>
+        <div class="timeline-container" id="timeline-1">
+            <div class="timeline-header">
+                <h2 class="timeline-header__title">Past Tour Dates</h2>
+                <h3 class="timeline-header__subtitle">Around the world 🌎</h3>
+            </div>
+            <div class="timeline">
+                <!-- Esto es un elemento de la línea del tiempo -->
+                <!-- Empieza elemento uno -->
+                <div id="uno" class="timeline-item elementoLineaTiempo" data-target="uno" data-text="05.29.2022">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://1.bp.blogspot.com/_A5ss3nyKBNA/S03vFTFwHUI/AAAAAAAABMQ/2Prmsx4zUKA/s1600/Christian%2BDeath%2BThe%2BExecution%2B%2Bby%2BChristian%2BDe.jpg"/>
+                        <h2 class="timeline__content-title">St. Vitus</h2>
+                        <p class="timeline__content-desc">Brooklyn, NY.</p>
+                    </div>
+                </div>
+                <!-- Termina elemento uno -->
+                <div id="dos" class="timeline-item elementoLineaTiempo" data-target="dos" data-text="Dingbats">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Christian_Death.jpg/500px-Christian_Death.jpg"/>
+                        <h2 class="timeline__content-title">05.28.2022</h2>
+                        <p class="timeline__content-desc">Dingbats. NJ.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Zen West. Baltimore">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://i.ytimg.com/vi/2NKG4P6nqcY/maxresdefault.jpg"/>
+                        <h2 class="timeline__content-title">01.27.2020</h2>
+                        <p class="timeline__content-desc">Zen West. Baltimore. MD</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Hard Rock Café">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://img1.wsimg.com/isteam/ip/239ad997-9d1d-4918-bf41-9f7b57acb68a/CHRISTIAN%20DEATH%20Singer%20Bassist%20Maitri%20%20%20%20by%20%20B.jpg/:/cr=t:33.34%25,l:0%25,w:100%25,h:33.32%25/rs=w:1200,h:600,cg:truez">
+                        <h2 class="timeline__content-title">05.26.2022</h2>
+                        <p class="timeline__content-desc">Pittsburgh. PA. Hard Rock Cafe.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Red Flag">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://i.ytimg.com/vi/0C5Py_BRvY8/hqdefault.jpg">
+                        <h2 class="timeline__content-title">05.24.2022</h2>
+                        <p class="timeline__content-desc">St. Louis. MO. Red Flag.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Foro Indie Rocks">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-t6uGqarttNDWQM2Y1uTaQG_cCf9XdT0nVg&s">
+                        <h2 class="timeline__content-title">05.12.2025</h2>
+                        <p class="timeline__content-desc">CDMX live show</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Rail Club Live">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/44/08/e5/4408e5bb-916b-b975-f180-84c3e88f0d58/pr_source.png/375x375bb.jpg">
+                        <h2 class="timeline__content-title">05.22.2022</h2>
+                        <p class="timeline__content-desc">Ft. Worth. TX. Rail CLub Live</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="zFATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/2014_WGT_11_Christian_Death.jpg/1200px-2014_WGT_11_Christian_Death.jpg">
+                        <h2 class="timeline__content-title">1920</h2>
+                        <p class="timeline__content-desc">Live show</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg">
+                        <h2 class="timeline__content-title">1922</h2>
+                        <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg">
+                        <h2 class="timeline__content-title">1923</h2>
+                        <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg">
+                        <h2 class="timeline__content-title">1934</h2>
+                        <p class="timeline__content-desc">
+          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+          In 1934, when the surname law was adopted, the national parliament gave him the name <i>
+                                <strong>"Atatürk" (Father of the Turks)</strong>
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="FATHER OF THE TURKS">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863">
+                        <h2 class="timeline__content-title">1938</h2>
+                        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo-footer">
+            <a href="http://www.turkishnews.com/Ataturk/life.htm" target="_blank">Source/Kaynak</a>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+        <script src="./script.js"></script>
+        <script src="../.././js/funciones.js"></script>
+        <script src="../.././js/carrusel.js"></script>
+        <script src="../.././js/menu.js"></script>
+    </body>
+</html>
+

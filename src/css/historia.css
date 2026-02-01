@@ -1,0 +1,23 @@
+/* estilos.css */
+/* Creado por Vales Corp en 13 enero 2026 */
+/*
+/* css para la mini historia de instroducción */
+#escena_uno {
+    min-height: 70vh;
+}
+
+#escena_cuatro {
+    height: 50%;
+}
+
+@media (max-width: 767px) {
+    #historia h1 {
+        font-size: 30pt;
+    }
+    #historia p {
+        font-size: 13pt;
+    }
+    #historia video {
+        height: 70%;
+    }
+}

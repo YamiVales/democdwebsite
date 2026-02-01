@@ -20,68 +20,138 @@
         <meta name="description" content="Darkness does not always mean evil. Sometimes it is the refuge of the soul."/>
         <meta name="keywords" content="music, christian death, valor kand, gothic, gothic rock, deathrock, maitri nicolai, dark, black, art, underground"/>
         <meta name="author" content="Vales Corp"/>
-        <title>Christian Death – Contacts</title>
-        <link type="text/css" rel="stylesheet" href="./src/semantic/semantic.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/cuerpo.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/componentes.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/estilos.css"></link>
-        <link type="text/css" rel="stylesheet" href="./src/css/carrusel.css"></link>
+        <title>📞 Contacts – Christian Death</title>
+        <link type="text/css" rel="stylesheet" href=".././src/semantic/semantic.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/cuerpo.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/componentes.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/estilos.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/carrusel.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
     </head>
     <body id="root">
-        <!-- Aqui se supone que deberia de ir el menu lateral -->
-
-        <div class="ui container">
-            <div class="computer only ui tablet only grid">
-              <!-- Menú principal para pc y pantallas grandes -->
-                <div class="ui top fixed borderless inverted menu">
-                    <div id="menu">
-                        <a href="/" class="item">
-                            <img class="ui micro image" src="./ui/cdlogo.svg"/>
-                        </a>
-                        <a href="/music" class="item" data-target="cortina_musica">
-                            <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
-                        </a>
-                        <a href="/contacts" class="item" data-target="cortina_contactos"><span class="material-symbols-outlined">contacts</span>&nbsp;Contacts</a>
-                        <a href="#" class="item" data-target="cortina_proxfechas"><span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates</a>
-                        <a href="#" class="item"><span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates</a>
-                        <!-- Cortinas desplegables -->
-                        <div class="cortina" id="cortina_musica">
-                            <a class="item">Discografía</a>
-                            <a class="item">Vídeos</a>
-                            <a class="item">Letras</a>
-                        </div>
-                        <div class="cortina" id="cortina_contactos">
-                            <a class="item">Email</a>
-                            <a class="item">Redes sociales</a>
-                            <a class="item">Booking</a>
-                        </div>
-                        <div class="cortina" id="cortina_proxfechas">
-                            <a class="item">Próximas</a>
-                            <a class="item">Pasadas</a>
-                            <a class="item">Festivales</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Menú movil -->
-            <div class="mobile only ui grid">
-                <div id="menu_movil" class="ui top fixed borderless inverted menu">
-                    <div class="item">
+    <!-- Cortinas -->
+    <!-- Cortina móvil -->
+    <div id="cortina_movil" class="insanus">
+        <div class="list">
+            <div class="item"><a href="music.html">Music</a></div>
+            <!-- Ocultar/desocultar cuando sea necesario -->
+            <div class="item"><a href="pastTourDates.html">Past Tour Dates</a></div>
+            <div class="item"><a href="upcomingTourDates.html">Upcoming Tour Dates</a></div>
+            <div class="item"><a href="contacts.html">Contacts</a></div>
+            <div class="item"><a href="shop.html">Shop</a></div>
+            <div class="item"><a href="socialNetworks.html">Social Networks</a></div>
+        </div>
+    </div>
+    <!-- Cortina música -->
+    <div id="cortina_musica" class="proditio">
+        <div class="list">
+            <div class="item titulo">Listen us on</div>
+            <div class="item opcion"><a href="https://music.apple.com/mx/artist/christian-death/6550137" target="blank">Apple Music</a></div>
+            <div class="item opcion"><a href="https://open.spotify.com/intl-es/artist/6mEohczxsctzkEIU0WAeWD?si=tCoOx4BQQsCVL_WQoFY7Fg" target="blank">Spotify</a></div>
+            <div class="item opcion"><a href="https://music.youtube.com/channel/UCxi91Pfz39YRtXQdn5n0NzA?si=EedafrKxRBumShHg" target="blank">YouTube Music</a></div>
+            <div class="item opcion"><a href="https://www.deezer.com/en/artist/15536" target="blank">Deezer</a></div>
+        </div>
+    </div>
+    <!-- Cortina eventos pasados -->
+    <div id="cortina_eventos_pasados" class="pornographic">
+        <div class="list">
+            <div class="item titulo">Checkout our past dates</div>
+            <div class="item opcion"><a href="pastTourDates.html">05.12.2025, CDMX, Foro Indie Rocks</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">11.12.2025, Argentina, Unione E Benevolenza</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">11.10.2024, Brazil, Vivo Río</a></div>
+            <div class="item opcion"><a href="pastTourDates.html">13.10.2024, Brazil, Carioca Club</a></div>
+        </div>
+    </div>
+    <!-- Cortina próximos eventos -->
+    <div id="cortina_proximos_eventos" class="allTheLove">
+        <div class="list">
+            <div class="item titulo">Checkout our next events</div>
+            <div class="item opcion"><a href="contacts.html">Actually no one</a></div>
+        </div>
+    </div>
+    <!-- Cortina contactos -->
+    <div id="cortina_contactos" class="sexy">
+        <div class="list">
+            <div class="item titulo">Our contacts</div>
+            <div class="item opcion"><a href="contacts.html">Management</a></div>
+            <div class="item opcion"><a href="contacts.html">Bookings North & South America</a></div>
+            <div class="item opcion"><a href="contacts.html">Bookings Europe</a></div>
+            <div class="item opcion"><a href="contacts.html">General Information</a></div>
+        </div>
+    </div>
+    <!-- Cortina tienda -->
+    <div id="cortina_tienda" class="evil">
+        <div class="list">
+            <div class="item titulo">Shop our merch</div>
+            <div class="item opcion"><a href="shop.html">Official e-shop coming soon</a></div>
+            <!-- <div class="item opcion"><a href="/contacts">Bookings North & South America</a></div> -->
+            <!-- <div class="item opcion"><a href="/contacts">Bookings Europe</a></div> -->
+            <!-- <div class="item opcion"><a href="/contacts">General Information</a></div> -->
+        </div>
+    </div>
+    <!-- Cortina redes sociales -->
+    <div id="cortina_redes_sociales" class="theRootOfAll">
+        <div class="list">
+            <div class="item titulo">Find us in</div>
+            <div class="item opcion"><a href="https://www.facebook.com/christiandeath" target="blank">Facebook</a></div>
+            <div class="item opcion"><a href="https://www.instagram.com/christiandeath.official/" target="blank">Instagram</a></div>
+            <div class="item opcion"><a href="https://www.youtube.com/@christiandeath5266/videos" target="blank">YouTube</a></div>
+            <div class="item opcion"><a href="https://www.tiktok.com/@christiandeathofficial" target="blank">TikTok</a></div>
+        </div>
+    </div>
+    <!-- Fin cortinas -->
+    <!-- Este div es para hacer el efecto de degradado cuando se abre una cortina y quieres ocultar el contenido debajo -->
+    <!-- <div id="difuminadop3"></div> -->
+    <!-- Menú principal para pc y pantallas grandes -->
+    <div class="ui container">
+        <!-- Empieza menú pc -->
+        <div class="computer only ui tablet only grid">
+            <div class="ui top fixed borderless inverted menu">
+                <div id="menu">
+                    <a href="/" class="item">
                         <img class="ui micro image" src="./ui/cdlogo.svg"/>
+                    </a>
+                    <a id="music" href="music.html" class="item">
+                        <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
+                    </a>
+                    <!-- Deshabilitada a petición de la banda, desocultar/ocultar cuando se pida -->
+                    <a id="past" href="pastTourDates.html" class="item">
+                        <span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates
+                    </a>
+                    <a id="upcoming" href="upcomingTourDates.html" class="item">
+                        <span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates
+                    </a>
+                    <a id="contacts" href="contacts.html" class="item">
+                        <span class="material-symbols-outlined">contacts</span>&nbsp;Contacts
+                    </a>
+                    <a id="shop" href="shop.html" class="item">
+                        <span class="material-symbols-outlined">shopping_bag</span>&nbsp;Shop
+                    </a>
+                    <a id="socialnetworks" href="socialNetworks.html" class="item">
+                        <span class="material-symbols-outlined">globe</span>&nbsp;Social Networks
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Termina menú pc -->
+        <!-- Empieza menú movil -->
+        <div class="mobile only ui grid">
+            <div id="menu_movil" class="ui top fixed borderless inverted menu">
+                <div id="menu_christian_death_logo" class="item">
+                    <a href="index.html"><img class="ui micro image" src="./ui/cdlogo.svg"/></a>
+                </div>
+                <div class="right menu">
+                    <div id="buscar" class="item">
+                        <span class="material-symbols-outlined">search</span>
                     </div>
-                    <div class="right menu">
-                        <div class="item">
-                            <span class="material-symbols-outlined">search</span>
-                        </div>
-                        <div class="item">
-                            <!-- cambio aqui para la funcion del menu cortina -->
-                            <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
-                            <a href="#"><span class="material-symbols-outlined">menu</span></a>
-                        </div>
+                    <div id="boton_menu_movil" class="item">
+                        <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
+                        <a href="#"><span id="span_menu" class="material-symbols-outlined">menu</span></a>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Termina menú movil -->
         </div>
         <!-- Aqui empieza el contenido de la página -->
         <div class="ui inverted center aligned segment container">
@@ -92,15 +162,15 @@
         <!-- Sección de contactos -->
         <!-- Inicia sesión de contactos -->
         <div class="ui inverted segment container">
-            <div class="ui two column grid">
+            <div class="ui two column stackable grid">
                 <!-- Inicio fila de Managers -->
-                <h1 class="bocadito pequeño">Management</h1>
+                <h1 class="Matrix-Book bocadito pequeño">Management</h1>
                 <div class="row">
                     <div class="column">
-                        <h2 class="Helvetica Neue">
+                        <h2 class="SF Pro Display">
                             World Entertaiment Inc.
                         </h2>
-                        <h2 class="Helvetica Neue">
+                        <h2 class="SF Pro Display">
                             <a class="enlace" href="https://worldentertainmentinc.com/" target="blank" style="text-decoration: underline;">
                                 <span class="material-symbols-outlined">globe</span>: https://worldentertainmentinc.com
                             </a>
@@ -116,14 +186,14 @@
                     </div>
                     <div class="column">
                         <div class="row">
-                            <h2 class="Helvetica Neue">Gunter Ford</h2>
+                            <h2 class="SF Pro Display">Gunter Ford</h2>
                             <a class="enlace" href="mailto:gunter@worldentertainmentinc.com" target="blank" style="text-decoration: underline;">
-                                <h3 class="Helvetica Neue"><span class="material-symbols-outlined">mail</span>: gunter@worldentertainmentinc.com</h3>
+                                <h3 class="SF Pro Display"><span class="material-symbols-outlined">mail</span>: gunter@worldentertainmentinc.com</h3>
                             </a>
                         </div>
                         <div class="ui hidden divider"></div>
                         <div class="row">
-                            <h2 class="Helvetica Neue">Alexander Ford</h2>
+                            <h2 class="SF Pro Display">Alexander Ford</h2>
                             <a class="enlace" href="mailto:alexander@worldentertainmentinc.com" style="text-decoration: underline;">
                                 <h3>
                                     <p><span class="material-symbols-outlined">mail</span>: alexander@worldentertainmentinc.com</p>
@@ -139,10 +209,10 @@
                     </div>
                 </div>
                 <!-- Inicio fila Bookings North and South America -->
-                <h1 class="bocadito pequeño">Bookings North and South America</h1>
+                <h1 class="Matrix-Book bocadito pequeño">Bookings North and South America</h1>
                 <div class="row">
                     <div class="column">
-                        <h2 class="Helvetica Neue">
+                        <h2 class="SF Pro Display">
                             Artist Worldwide Agency
                         </h2>
                         <a class="enlace" href="http://www.artistww.com/" target="blank" style="text-decoration: underline;">
@@ -161,7 +231,7 @@
                     </div>
                     <div class="column">
                         <div class="row">
-                            <h2 class="Helvetica Neue">Chuck Bernal</h2>
+                            <h2 class="SF Pro Display">Chuck Bernal</h2>
                             <a class="enlace" href="mailto:chuck@artistww.com" target="blank">
                                 <h3 class="Helvetica Neue"><span class="material-symbols-outlined">mail</span>: chuck@artistww.com</h3>
                             </a>
@@ -175,10 +245,10 @@
                     </div>
                 </div>
                 <!-- Inicio fila Bookings North and South America -->
-                <h1 class="bocadito pequeño">Bookings Europe</h1>
+                <h1 class="Matrix-Book bocadito pequeño">Bookings Europe</h1>
                 <div class="row">
                     <div class="column">
-                        <h2 class="Helvetica Neue">
+                        <h2 class="SF Pro Display">
                             Echelon Talent Agency Ltd.
                         </h2>
                         <a class="enlace" href="#" target="blank" style="text-decoration: underline;">
@@ -194,7 +264,7 @@
                     </div>
                     <div class="column">
                         <div class="row">
-                            <h2 class="Helvetica Neue">Stephen Moss</h2>
+                            <h2 class="SF Pro Display">Stephen Moss</h2>
                             <a class="enlace" href="mailto:stephen@echelontalent.agency" target="blank">
                                 <h3 class="Helvetica Neue"><span class="material-symbols-outlined">mail</span>: stephen@echelontalent.agency</h3>
                             </a>
@@ -208,10 +278,10 @@
                     </div>
                 </div>
                 <!-- Inicia fila de contacto general -->
-                <h1 class="bocadito pequeño">General Information</h1>
+                <h1 class="Matrix-Book bocadito pequeño">General Information</h1>
                 <div class="row">
                     <div class="column">
-                        <h2 class="Helvetica Neue">
+                        <h2 class="SF Pro Display">
                             Christian Death
                         </h2>
                         <a class="enlace" href="#" target="blank" style="text-decoration: underline;">
@@ -222,13 +292,41 @@
                     </div>
                     <div class="column">
                         <div class="row">
-                            <h2 class="Helvetica Neue">Christian Death</h2>
+                            <h2 class="SF Pro Display">Christian Death</h2>
                             <a class="enlace" href="mailto:info@officialchristiandeath.com" target="blank">
                                 <h3 class="Helvetica Neue"><span class="material-symbols-outlined">mail</span>: info@officialchristiandeath.com</h3>
                             </a>
                         </div>
                     </div>
                 </div>
+                <!-- Termina fila de contacto general -->
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <div class="ui divider inverted"></div>
+                    </div>
+                </div>
+                <!-- Inicia fila de contacto webmaster -->
+                <!-- <h1 class="Matrix-Book bocadito pequeño">Webmaster</h1> -->
+                <!-- <div class="row"> -->
+                <!--     <div class="column"> -->
+                <!--         <h2 class="SF Pro Display"> -->
+                <!--             Vales Corp -->
+                <!--         </h2> -->
+                <!--         <a class="enlace" href="#" target="blank" style="text-decoration: underline;"> -->
+                <!--            <h3> -->
+                <!--                <span class="material-symbols-outlined">globe</span>: https://valescorp.org -->
+                <!--            </h3> -->
+                <!--         </a> -->
+                <!--     </div> -->
+                <!--     <div class="column"> -->
+                <!--         <div class="row"> -->
+                <!--             <h2 class="SF Pro Display">David Vales</h2> -->
+                <!--             <a class="enlace" href="mailto:davidvales@valescorp.org" target="blank"> -->
+                <!--                 <h3 class="Helvetica Neue"><span class="material-symbols-outlined">mail</span>: davidvales@valescorp.org</h3> -->
+                <!--             </a> -->
+                <!--         </div> -->
+                <!--     </div> -->
+                <!-- </div> -->
                 <!-- Termina fila de contacto general -->
             </div>
         </div>
@@ -269,7 +367,8 @@
         <!-- Fin de pié de página -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-        <script src="./src/js/funciones.js"></script>
-        <script src="./src/js/carrusel.js"></script>
+        <script src=".././src/js/funciones.js"></script>
+        <script src=".././src/js/carrusel.js"></script>
+        <script src=".././src/js/menu.js"></script>
     </body>
 </html>

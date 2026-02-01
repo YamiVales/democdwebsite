@@ -24,7 +24,7 @@ body {
     left: 40% !important;
     transform: translateX(-50%) !important;
     text-align: center !important;
-    z-index: 11;
+    z-index: 100;
 }
 
 #menu_movil .right.menu {
@@ -34,6 +34,34 @@ body {
 
 #menu_movil {
     padding-bottom: 0%;
+}
+
+#cortina_movil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15vw;
+    padding-top: 23vw;
+    width: 100%;
+    height: 200vh;
+    z-index: 99;
+    overflow-y: auto;
+}
+
+#cortina_musica,
+#cortina_contactos,
+#cortina_eventos_pasados,
+#cortina_proximos_eventos,
+#cortina_redes_sociales {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 25%;
+    padding-top: 5vw;
+    width: 100%;
+    height: 45vh;             /* 100% de la altura visible */
+    z-index: 99;          /* Para que esté encima de todo */
+    overflow-y: auto;
 }
 
 .ui.button {
@@ -50,14 +78,6 @@ body {
     vertical-align: -0.22em;
 }
 
-#christian_death_button.ui.button {
-    font-size: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .ui.hidden.divider.grande {
     padding-top: 10%;
 }
@@ -66,31 +86,40 @@ body {
     font-size: 5vw;
 }
 
+#music-cabecera {
+    padding-top: 5%;
+    transition: all 0.8s ease-out;
+}
+/* esto es para los efectos de la pagina */
+
+
 /* Escalado de elementos para pc, tablet y pantallas anchas */
 @media (min-width: 768px) {
     #contenedor-computadora {
-        margin-top: -50px;
+        min-height: 70vh; /* Altura mínima */
+        overflow: hidden; /* Fuerza a respetar el tamaño */
+        margin-top: -5%;
         padding-bottom: 0px;
     }
 
-    #logo_principal {
+    #logo_principal_computadora {
         position: relative;
         padding-top: 12vh;
         z-index: 10;
     }
 
-    #logo_principal .contenedor_logo_principal img {
+    #logo_principal_computadora .contenedor_logo_principal_computadora img {
         width: 40vw;
         height: auto;
     }
 
     /* Carrusel debajo del logo */
-    #carrusel_principal {
+    #carrusel_principal_computadora {
         position: relative;
         margin-top: -15%;  /* justo debajo del logo */
     }
 
-    #carrusel_principal section {
+    #carrusel_principal_computadora section {
         width: 40vw;
         height: auto;
     }
@@ -107,27 +136,55 @@ body {
         font-size: 4em !important;
     }
 
+    h1.bocadito.mini {
+        font-size: 3em !important;
+    }
+
     .bocadito.texto p {
         padding-top: 0%;
         padding-bottom: 10%;
         padding-left: 13%;
         padding-right: 13%;
     }
+
+    .christian_death_button.ui.button {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .pedacito {
+        font-size: 20pt;
+        text-align: center;
+        padding-bottom: 5%;
+        padding: 10%;
+    }
+
+    .etiqueta.principal {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .etiqueta.principal h1 {
+        line-height: 1.0;
+    }
 }
 
 /* Escalado proporcional con la pantalla para fonos */
 @media (max-width: 767px) {
     #contenedor-fono {
-        margin-top: 10%;
+        min-height: 60vh;
+        margin-top: 9%;
         margin-bottom: -5%;
     }
 
-    #logo_principal img {
+    #logo_principal_fono img {
         position: relative;
         z-index: 10;
     }
 
-    #carrusel_principal {
+    #carrusel_principal_fono {
         position: relative;
         margin-top: -25%;
     }
@@ -140,6 +197,35 @@ body {
         padding-top: 0%;
         padding-bottom: 10%;
         font-size: 0.8em!important;
+    }
+
+    .historia p {
+        font-size: 0.5em !important;
+    }
+    .christian_death_button.ui.button {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -5%;
+    }
+
+    #releases .row .column {
+        padding: 2px;
+        font-size: 8pt;
+    }
+
+    .pedacito {
+        font-size: 8pt;
+        text-align: center;
+        padding-bottom: 5%;
+        padding: 10%;
+        line-height: 0.8;
+    }
+    .etiqueta.principal {
+        padding-top: 8%;
+        padding-bottom: 0%;
     }
 }
 
@@ -203,9 +289,8 @@ body {
 }
 
 #cdmusic_encabezado {
-
     padding-top: 5%;
-    padding-left: 24%;
+    padding-left: 10%;
 }
 
 .enlacep3 {
@@ -216,60 +301,8 @@ body {
     width: 40%;
 }
 
-.pedacito {
-    font-size: 20pt;
-    text-align: center;
-    padding-bottom: 5%;
-    padding: 10%;
-}
-
 .ui.card {
     height: 100%;
-}
-
-/* Menú cortina? */
-
-/* Estilo de la cortina desplegable */
-.cortina {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.95);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 0 0 12px 12px;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 1000;
-  padding-left: 200%;
-  padding-right: 200%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.cortina.activa {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.cortina .item {
-  color: white;
-  padding: 1rem 1.5rem;
-  font-size: 0.9rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: background-color 0.3s, padding-left 0.3s;
-}
-
-.cortina .item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 2rem;
-}
-
-.botoncito.right.floated.column {
-    padding-right: 10%;
 }
 
 #contactos {
@@ -281,12 +314,39 @@ video.historia {
     height: 100%
 }
 
-video.historia.final {
-    width: 70%;
-    height: 70%
+video#no-events {
+    display: block;
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
 }
 
-#escena_uno {
-    padding-top: 15%;
-    padding-bottom: 15%;
+#nanogallery2 {
+    padding-top: 5%;
+}
+
+#no-fechas {
+    padding-top: 1%;
+}
+
+#no-fechas h1 {
+    margin-top: -1%;
+}
+
+#etiquetap3 h1 {
+    font-size: 50pt;
+}
+
+#video-galeria iframe {
+    display: block;
+    position: relative;
+    width: 40vh;
+    height: auto;
+    margin: 0 auto;
+}
+
+#bocadito-fono img {
+    width: 50pt;
+    height: auto;
 }

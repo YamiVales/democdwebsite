@@ -124,32 +124,14 @@ $(document).ready(function () {
         });
     });
 
-    //Cortina?
-    $(document).ready(function() {
-        // Al pasar el mouse sobre un item del menú
-        $('.ui.menu .item').mouseenter(function() {
-            const targetId = $(this).data('target');
-            const dropdown = $('#' + targetId);
+    // Para salto en elementos de línea del tiempop3, esta función permite al botón acomodarse en el tope de la página
+    $(".elementoLineaTiempo").click(function() {
+        // Obtener el ID del elemento destino desde el atributo data-target
+        var targetId = $(this).data("target");
 
-            // Cerrar otras cortinas
-            $('.cortina').removeClass('activa');
-
-            // Abrir la cortina correspondiente
-            dropdown.addClass('activa');
-        });
-
-        // Cerrar cortina al salir del menú o la cortina
-        $('.ui.menu, .cortina').mouseleave(function(e) {
-            if (!$(e.relatedTarget).closest('.cortina').length) {
-            $('.cortina').removeClass('activa');
-            }
-        });
-
-      // Cerrar al hacer click fuera
-        $(document).click(function(e) {
-            if (!$(e.target).closest('.ui.menu, .cortina').length) {
-                $('.cortina').removeClass('activa');
-            }
-        });
+        // Hacer scroll suave hasta el elemento con ese ID
+        $('html, body').animate({
+            scrollTop: $('#' + targetId).offset().top
+        }, 800); // 800ms = 0.8 segundos de duración
     });
 });
