@@ -8,17 +8,23 @@
 /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin'); */
 
 @font-face {
-    font-family: 'Matrix-Book';
-    src: url('https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff') format('woff');
+    font-family: "Matrix-Book";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff")
+            format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/sfpro.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/Matrix-Book.otf') format('otf');
+    font-family: "SF Pro Display";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/sfpro.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/Matrix-Book.otf")
+            format("otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -33,14 +39,13 @@
     position: fixed;
     background: #111;
     z-index: 1000;
-
 }
 
 #cortina_movil {
     background-color: #000000;
     color: #ffffff;
     font-size: 2em;
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
 }
 
 #cortina_movil .item {
@@ -55,18 +60,20 @@
 #cortina_contactos,
 #cortina_eventos_pasados,
 #cortina_proximos_eventos,
-#cortina_redes_sociales {
+#cortina_redes_sociales,
+#cortina_tienda {
     background-color: #000000;
     color: #ffffff;
     font-size: 0.9em;
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
 }
 
 #cortina_musica .item,
 #cortina_contactos .item,
 #cortina_eventos_pasados .item,
 #cortina_proximos_eventos .item,
-#cortina_redes_sociales .item {
+#cortina_redes_sociales .item,
+#cortina_tienda .item {
     line-height: 1.8;
 }
 
@@ -74,7 +81,8 @@
 #cortina_contactos .item a,
 #cortina_eventos_pasados .item a,
 #cortina_proximos_eventos .item a,
-#cortina_redes_sociales .item a {
+#cortina_redes_sociales .item a,
+#cortina_tienda .item a {
     color: #ffffff;
 }
 
@@ -82,7 +90,8 @@
 #cortina_contactos .item.opcion,
 #cortina_eventos_pasados .item.opcion,
 #cortina_proximos_eventos .item.opcion,
-#cortina_redes_sociales .item.opcion {
+#cortina_redes_sociales .item.opcion,
+#cortina_tienda .item.opcion {
     font-size: 2em;
     line-height: 1.5;
 }
@@ -91,7 +100,8 @@
 #cortina_contactos .item.titulo,
 #cortina_eventos_pasados .item.titulo,
 #cortina_proximos_eventos .item.titulo,
-#cortina_redes_sociales .item.titulo {
+#cortina_redes_sociales .item.titulo,
+#cortina_tienda .item.titulo {
     color: #9c9c9c;
 }
 
@@ -100,17 +110,42 @@
 }
 
 /* aqui cambié de img a section */
-#carrusel_principal_computadora section, #carrusel_principal_fono section {
+#carrusel_principal_computadora section,
+#carrusel_principal_fono section {
     border-radius: 20px;
     display: block;
     mask-image:
-        linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
-        linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to left,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        );
     mask-composite: intersect;
-        -webkit-mask-image:
-        linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%),
-        linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
-        -webkit-mask-composite: intersect;
+    -webkit-mask-image:
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to left,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        );
+    -webkit-mask-composite: intersect;
 }
 
 #galeria h1 {
@@ -122,7 +157,7 @@
 }
 
 .SF.Pro.Display {
-    font-family: 'SF Pro Display' !important;
+    font-family: "SF Pro Display" !important;
 }
 
 /* #etiqueta_principal h1 { */
@@ -132,7 +167,15 @@
 .doradoespecial.ui.button {
     border: none;
     border-radius: 90px;
-    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background: linear-gradient(
+        to right,
+        #77530a,
+        #ffd277,
+        #77530a,
+        #77530a,
+        #ffd277,
+        #77530a
+    );
     background-size: 250%;
     background-position: left;
     color: #ffd277;
@@ -173,7 +216,7 @@
     background-color: #00000000;
 }
 
-#contenedor-fono{
+#contenedor-fono {
     background-color: #00000000;
 }
 
