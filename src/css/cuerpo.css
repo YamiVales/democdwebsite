@@ -37,6 +37,7 @@ body {
 }
 
 #cortina_movil {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,6 +55,7 @@ body {
 #cortina_proximos_eventos,
 #cortina_redes_sociales,
 #cortina_tienda {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
